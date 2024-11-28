@@ -1,0 +1,126 @@
+/* Mobile (portrait) */
+@media (max-width: 480px) {
+    /* Styles pour les smartphones */
+}
+
+/* Tablette (portrait) */
+@media (max-width: 768px) {
+    /* Styles pour les tablettes */
+    /* ---- les classes préparées ----- */
+    .pd5{
+        padding: 0 5%;
+    }
+
+    .pd10{
+        padding: 0 5%;
+    }
+
+    /* les flexbox */
+    .flexe{
+        flex: 1 1 100% !important;
+    }
+
+    /* -----------------------------------------------
+            
+            LES PAGES DE SERVICES
+            
+    ----------------------------------------------- */
+    section.service-item{
+        padding-top: 80px;
+        height: auto;
+    }
+
+    section.service-item .image{
+        height: 45vh;
+    }
+
+    /* -----------------------------------------------
+            
+            LA LANDING PAGE
+            
+    ----------------------------------------------- */
+    .landing-page .contain .contenu{
+        text-align: center;
+    }
+    
+    .landing-page .image{
+        display: none;
+    }
+    
+    
+
+}
+
+/* Tablette (paysage) */
+@media (max-width: 1024px) {
+    /* Styles pour les tablettes en paysage */
+    
+    /* ---- les classes préparées ----- */
+    .pd5{
+        padding: 0 5%;
+    }
+
+    .pd10{
+        padding: 0 5%;
+    }
+
+    /* les flexbox */
+    .flexe{
+        flex: 1 1 45%;
+    }
+
+    /* -----------------------------------------------
+            LE HEADER
+    ----------------------------------------------- */
+    /* le menu */
+    header .menu{
+        position: fixed;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        padding: 20px;
+        display: none;
+    }
+
+    header .contact{
+        display: none;
+    }
+
+    header .menu a{
+        display: block;
+    }
+    
+    header .menu a:hover{
+       border-bottom: 2px solid #ff6f00;
+    }
+    
+    /* le btn */
+    header nav .btn-menu{
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .toggle{
+        display: block !important;
+    }
+
+
+}
+
+/* Petit écran de bureau */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Styles pour les petits écrans de bureau */
+}
+
+/* Grand écran de bureau */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    /* Styles pour les écrans de bureau standards */
+}
+
+/* Très grand écran de bureau */
+@media (min-width: 1441px) {
+    /* Styles pour les grands écrans */
+}

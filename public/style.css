@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* les couleurs */
+:root{
+    --bleue : #17479b;
+    --orange : #f0712a;
+    --bleueClaire : #6a97d0;
+}
+
+p{
+    line-height: 30px;
+    color: #505050;
+}
+
+.titre{
+    text-align: center;
+}
+
+.titre h1{
+    font-size: 60px;
+}
+
+/* ---- les classes préparées ----- */
+.pd5{
+    padding: 0 5%;
+}
+
+.pd10{
+    padding: 0 10%;
+}
+
+/* les flexbox */
+.flexp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flexe{
+    flex: 1 1 45%;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* les images */
+
+
+
+/* -----------------------------------------------
+            LE HEADER
+----------------------------------------------- */
+header nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd ;
+
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+header nav .logo{
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--bleue);
+}
+
+header nav a.link{
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 20px 0;
+}
+
+header nav a.link:hover{
+    font-weight: bold;
+}
+
+header nav a.contact{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 2rem;
+}
+
+/* le btn */
+header nav .btn-menu{
+    display: none;
+}
+
+
+/* -----------------------------------------------
+            LA LANDING PAGE
+----------------------------------------------- */
+.landing-page{
+    height: 100vh;
+    background-color: #eed;
+    position: relative;
+    overflow: hidden;
+}
+
+.landing-page .contain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page .contain .contenu{
+    z-index: 1;
+}
+
+.landing-page .contain h1{
+    font-size: 60px;
+}
+
+.landing-page .contain p{
+    margin-bottom: 40px;
+}
+
+.landing-page .contain a{
+    color: #fff;
+    padding: 20px 40px;
+    background-color: var(--orange);
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.landing-page .image{
+    background: url('../assets/homme.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.landing-page .svg{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+}
+
+.landing-page .svg svg{
+    fill: #fff;
+}
+
+
+
+
+/* -----------------------------------------------
+            SECTION PRESENTATION
+----------------------------------------------- */
+section.presentation{
+    padding: 5% 10%;
+}
+
+section.presentation .image{
+    max-width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url('../assets/illustration.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+section.presentation .contain{
+    text-align: center;
+}
+
+section.presentation .contain h1{
+    font-size: 60px;
+}
+
+section.presentation .contain p{
+    margin-bottom: 20px;
+}
+
+section.presentation a.btn-more{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 2rem;
+}
+
+/* -----------------------------------------------
+            SECTION SERVICES
+----------------------------------------------- */
+section.services {
+    padding: 20px;
+}
+
+section.services .item{
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+section.services .contain{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+section.services .contain .contenu{
+    padding: 20px;
+}
+
+section.services .image{
+    height: 30vh;  
+    transition: 300ms;
+    cursor: pointer;
+}
+
+section.services .image:hover{
+    transform: scale(1.1);
+}
+
+section.services .img1{
+    background: url('https://img.freepik.com/vecteurs-libre/concept-processus-conception-pour-page-destination_23-2148324107.jpg?t=st=1732358270~exp=1732361870~hmac=9e23b50d798c6843e7af3164063c4ff8daf79cb08bd4e927020e2cca232d3054&w=740');
+    background-size: cover;
+    background-position: center;
+}
+
+section.services .img2{
+    background: url('https://img.freepik.com/photos-gratuite/jeunes-classe-ordinateurs_23-2147663656.jpg?uid=P129854008&ga=GA1.1.1064168284.1730054805&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+section.services .img3{
+    background: url('https://img.freepik.com/photos-gratuite/representations-ui-ux-ordinateur-portable_23-2150201871.jpg?uid=P129854008&ga=GA1.1.1064168284.1730054805&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+section.services .img4{
+    background: url('https://img.freepik.com/photos-gratuite/concept-marketing-medias-sociaux-pour-marketing-applications_23-2150063140.jpg?t=st=1732358668~exp=1732362268~hmac=6bfe2c9b8c306bf2c4c197f0a49a4507e8e7bd9cc8efe592fec61c3c5c3b1bd6&w=900');
+    background-size: cover;
+    background-position: center;
+}
+
+section.services p{
+    margin-bottom: 20px;
+}
+
+section.services a.btn-more{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--orange);
+    border-radius: 2rem;
+}
+
+/* -----------------------------------------------
+            LE FOOTER
+----------------------------------------------- */
+footer{
+    padding: 2% 10%;
+    color: #fff;
+    background-color: var(--bleue);
+}
+
+footer h4{
+    margin-bottom: 10px;
+}
+
+footer a {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+footer p {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+footer .contact{
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 2rem;
+    background-color: var(--orange);
+}
+
+
+/* -----------------------------------------------
+            
+            LES PAGES DE SERVICES
+            
+----------------------------------------------- */
+section.service-item{
+    margin-top: 60px;
+    min-height: 100vh;
+}
+
+section.service-item .image{
+    background: #ff4e4e;
+}
+
+section.service-item .img1{
+    background: url('https://img.freepik.com/vecteurs-libre/concept-processus-conception-pour-page-destination_23-2148324107.jpg?t=st=1732358270~exp=1732361870~hmac=9e23b50d798c6843e7af3164063c4ff8daf79cb08bd4e927020e2cca232d3054&w=740');
+    background-size: cover;
+    background-position: center;
+}
+
+section.service-item .img2{
+    background: url('https://img.freepik.com/photos-gratuite/jeunes-classe-ordinateurs_23-2147663656.jpg?uid=P129854008&ga=GA1.1.1064168284.1730054805&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+section.service-item .img3{
+    background: url('https://img.freepik.com/photos-gratuite/representations-ui-ux-ordinateur-portable_23-2150201871.jpg?uid=P129854008&ga=GA1.1.1064168284.1730054805&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+section.service-item .img4{
+    background: url('https://img.freepik.com/photos-gratuite/concept-marketing-medias-sociaux-pour-marketing-applications_23-2150063140.jpg?t=st=1732358668~exp=1732362268~hmac=6bfe2c9b8c306bf2c4c197f0a49a4507e8e7bd9cc8efe592fec61c3c5c3b1bd6&w=900');
+    background-size: cover;
+    background-position: center;
+}
+
+
+section.service-item .contain{
+    display: flex;
+    align-items: center;
+}
+
+section.service-item .contain h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+section.service-item .contain .liste{
+    line-height: 40px !important;
+    margin-bottom: 30px;
+}
+
+section.service-item .contain span{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+section.service-item .contain a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: var(--bleue);
+    margin-bottom: 40px;
+}
